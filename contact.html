@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせページ</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <p><a href="index.html">ポートフォリオ</a></p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="profile.html">profile</a></li>
+            <li><a href="favorite.html">favorite</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>お問い合わせ</h1>
+        <form action="xxx.php" method="post">
+            <label for="name">名前</label> <input type="text" name="NAME" id="name">
+            <label for="tel">電話番号</label> <input type="tel" name="TELEPHONE" id="tel">
+            <label for="mail">メールアドレス</label> <input type="email" name="MAIL" required id="mail">
+            <label>都道府県</label>
+            <select name="add">
+                <option value="osaka">大阪府</option>
+                <option value="kyoto">京都府</option>
+                <option value="shiga">滋賀県</option>
+                <option value="hyogo">兵庫県</option>
+                <option value="wakayama">和歌山県</option>
+            </select>
+            <label>性別</label>
+            <div>
+                <label><input type="radio" name="gender" value="man"> 男性</label>
+                <label><input type="radio" name="gender" value="woman"> 女性</label>
+            </div>
+            <label>好きなもの</label>
+            <div>
+                <label><input type="checkbox" name="favorite" value="movie"> 映画</label>
+                <label><input type="checkbox" name="favorite" value="drama"> ドラマ</label>
+                <label><input type="checkbox" name="favorite" value="anime"> アニメ</label>
+                <label><input type="checkbox" name="favorite" value="game"> ゲーム</label>
+            </div>
+            <label for="come">コメント</label>
+            <textarea name="comment" id="come"></textarea>
+            <input type="submit" value="送信する">
+        </form>
+    </main>
+    <footer>
+        <p><small>&copy; 2026 oshita</small></p>
+    </footer>
+</body>
+</html>
